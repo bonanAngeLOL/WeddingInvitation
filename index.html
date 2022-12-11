@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nuestra boda</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="./assets/css/wed/wed.css" rel="stylesheet">
+        <link href="./assets/css/wed/frame.css" rel="stylesheet">
     </head>
     <body>
+        <div class="background">
+            <img src="assets/images/marble.jpg" draggable="false">
+        </div>
         <div class="container"> 
             <div class="row">
-                <div class="col">
-                    <h1 class="main">
-                        <span>Rocío</span>
-                        <span><span class="upper">&</span> Angel</span>
-                    </h1>
+                <div class="col title">
+                    <div class="headerContainer">
+                        <img src="assets/images/marco3a.png" class="marginMain" draggable="false">
+                        <h1 class="main">
+                            <span>Rocío</span>
+                            <span>Angel</span>
+                        </h1>
+                        <img src="assets/images/marco3a.png" class="marginMain contra" draggable="false">
+                    </div>
+                    <a href="#weddingInfo" id="infoAnchorButton">
+                        <svg id="more-arrows">
+                            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                            <polygon class="arrow-botton" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="weddingInfo">
+            <div class="row eventInfo">
+                <div class="col-12">
+                    <img src="assets/images/ring2.png" class="rings" draggable="false">
+                </div>
+                <div class="col-12">
+                    <p class="mainP">
+                        <span>¡Nos casamos!</span>
+                        <span class="weddingDate">18 de Marzo de 2023</span>
+                    </p>
+                </div>
+                <div class="col-5 hour d-table">
+                    <div class="d-table-row">
+                        <div class="d-table-cell align-middle">
+                            <img src="assets/images/church.png" style="height: 3rem;" draggable="false">
+                        </div>
+                    </div>
+                    <div class="d-table-row">
+                        <div class="horario d-table-cell align-middle">19:00 hrs.</div>
+                    </div>
+                </div>
+                <div class="col-7 placeInfo">
+                    <span class="place">Capilla del Rosario</span>
+                    <hr>
+                    <span class="address">5 de mayo y 4 poniente #101; Col. Centro</span>
+                </div>
+                <div class="col-5 hour d-table">
+                    <div class="d-table-row">
+                        <div class="d-table-cell align-middle">
+                            <img src="assets/images/cake.png" style="height: 3rem;" draggable="false">
+                        </div>
+                    </div>
+                    <div class="d-table-row">
+                        <div class="horario d-table-cell align-middle">21:00 hrs.</div>
+                    </div>
+                </div>
+                <div class="col-7 placeInfo">
+                    <span class="place">Hotel Posada Señorial</span>
+                    <hr>
+                    <span class="address">Av. 5 de Mayo 1400, San Juan Aquiahuac, San Andrés Cholula</span>
+                </div>
+                <div class="col-12">
+                    <p class="cita">Lo que Dios ha unido, que no lo separe el hombre</p>
                 </div>
             </div>
         </div>
