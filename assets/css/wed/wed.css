@@ -1,0 +1,132 @@
+@font-face {
+   font-family: MainHeading;
+   src: url(../../fonts/Satisfy/Satisfy-Regular.ttf);
+}
+@font-face {
+   font-family: InfoTitleRegular;
+   src: url(../../fonts/Kadwa/Kadwa-Regular.ttf);
+}
+@font-face {
+   font-family: InfoTitleBold;
+   src: url(../../fonts/Kadwa/Kadwa-Bold.ttf);
+}
+body{
+    overflow-x:hidden;
+}
+.background{
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: 0;
+  opacity: .6;
+}
+
+div{
+    z-index:1;
+}
+
+#weddingInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.background img{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+h1.main{
+    font-family: MainHeading;
+    color: #5d5d5d;
+    text-align: center;
+    font-size: 3rem;
+    user-select: none;
+}
+h1.main > span{
+    display: block;
+    word-spacing: -0.5rem;
+    font-weight: 600;
+}
+h1.main > span > .upper{
+    font-size: 2.4rem;
+    position: relative;
+    vertical-align: super;
+}
+
+p.mainP {
+    font-family: InfoTitleRegular;
+    font-size: 1.3rem;
+}
+
+p.mainP > span:first-child {
+    font-family: InfoTitleBold;
+}
+
+.col.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#infoAnchorButton{
+    display: contents;
+}
+
+#more-arrows {
+    width: 75px;
+    height: 65px;
+    position: absolute;
+    bottom: 10px;
+}
+
+polygon.arrow-top{
+  animation: arrowDown 3s infinite;
+}
+polygon.arrow-botton{
+  animation: arrowBase 3s infinite;
+}
+
+polygon {
+  fill: #FFF;
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: .8;
+  }
+  70%{
+    opacity: .4;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBase {
+  0% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
