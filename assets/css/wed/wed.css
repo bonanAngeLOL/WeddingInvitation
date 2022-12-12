@@ -20,7 +20,6 @@ body{
   width: 200%; 
   height: 200%;
   z-index: 0;
-  opacity: .6;
 }
 
 div{
@@ -89,7 +88,7 @@ p.mainP > span:first-child {
     width: 75px;
     height: 65px;
     position: absolute;
-    bottom: 10px;
+    bottom: 75px;
 }
 
 polygon.arrow-top{
@@ -100,7 +99,7 @@ polygon.arrow-botton{
 }
 
 polygon {
-  fill: #FFF;
+  fill: #546361;
 }
 
 @keyframes arrowDown {
