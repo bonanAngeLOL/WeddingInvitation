@@ -79,9 +79,14 @@ span.address {
     display: inline-block;
 }
 
-.placeInfo > hr {
+.placeInfo hr {
     border-top: 4px dotted gray;
     margin: 0.5rem 0;
+}
+
+.placeInfo a {
+    text-decoration:none;
+    color:inherit;
 }
 
 .hour > img {
@@ -114,3 +119,7 @@ img.contra {
     transform: translate(7rem, -5rem) rotate(120deg);
 }
 
+span.weddingDate > a {
+    text-decoration:none;
+    color:inherit;
+}
