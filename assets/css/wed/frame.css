@@ -123,3 +123,8 @@ span.weddingDate > a {
     text-decoration:none;
     color:inherit;
 }
+#pases{
+    display: none;
+    font-family: 'InfoTitleRegular';
+    text-align: center;
+}

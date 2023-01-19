@@ -17,4 +17,10 @@ document.getElementById("addressFiesta").innerText = wInfo.evento[1].direccion;
 document.getElementById("locMisa").setAttribute("href", wInfo.evento[0].maps);
 document.getElementById("locFiesta").setAttribute("href", wInfo.evento[1].maps);
 
-
+if(wInfo.hasOwnProperty("nPases")){
+    document.getElementById("pases").style.display = "block";
+    document.getElementById("nPases").innerText = wInfo.nPases;
+}
+else{
+    document.getElementById("pases").style.display = "none";
+}
